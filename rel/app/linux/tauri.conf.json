@@ -1,0 +1,41 @@
+{
+  "build": {
+    "devPath": "public",
+    "distDir": "public",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "elixirkit_rust",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "windows": [
+      {
+        "title": "elixirkit_rust",
+        "visible": false
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "systemTray": {
+      "iconPath": "icons/livebook.png",
+      "iconAsTemplate": true
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.tauri.dev",
+      "icon": [
+        "icons/livebook.png"
+      ]
+    }
+  }
+}
